@@ -12,7 +12,7 @@
                const res=await fetch(url);
                const data=await res.json();
                document.getElementById("para1").innerText=data.login;
-               document.getElementById("para1").innerHTML=data.image;
+               
                document.getElementById("para1").style.color="red";
                console.log("response", res.json());
                console.log("response:", res);
@@ -28,6 +28,6 @@
 <body>
     <h1>github page info</h1>
     <p id="para1"></p>
-    <img src="" alt="">
+    
 </body>
 </html>
